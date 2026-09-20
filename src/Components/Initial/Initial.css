@@ -1,0 +1,49 @@
+.initial {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background: #111827;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.initial h1 {
+  margin: 0 0 15px;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.initial p {
+  margin: 0 0 30px;
+  color: #d1d5db;
+  font-size: 18px;
+  text-align: center;
+}
+
+.initial .btn {
+  display: block;
+  margin: 0 auto;
+  padding: 13px 30px;
+  border: none;
+  border-radius: 8px;
+  background: white;
+  color: #111827;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.initial .btn:hover {
+  background: #e5e7eb;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15);
+}
+
+.initial .btn:active {
+  transform: translateY(0);
+}

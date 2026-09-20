@@ -1,0 +1,31 @@
+.reset-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.reset-btn {
+  padding: 12px 25px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #00c46a;
+  color: white;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.reset-btn:hover {
+  background: #00a957;
+  transform: translateY(-2px);
+}
+
+.reset-btn:active {
+  transform: translateY(0);
+}

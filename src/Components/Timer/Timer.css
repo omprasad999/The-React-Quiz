@@ -1,0 +1,45 @@
+.timer {
+  width: 90px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #212529;
+  color: #ffffff;
+
+  border: 2px solid #2563eb;
+  border-radius: 10px;
+
+  font-family: "Courier New", monospace;
+  font-size: 20px;
+  font-weight: 700;
+
+  cursor: default;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+
+  box-sizing: border-box;
+  margin-left: 400px;
+  margin-top: -20px;
+}
+
+.timer:hover {
+  background-color: #343a40;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.3);
+}
+
+@media (max-width: 600px) {
+  .timer {
+    width: 80px;
+    height: 42px;
+
+    font-size: 18px;
+    border-radius: 8px;
+  }
+}

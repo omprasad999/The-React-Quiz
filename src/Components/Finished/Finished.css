@@ -1,0 +1,169 @@
+.Finished {
+  width: 100%;
+  min-height: 65vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+/* Main Result Card */
+.result-card {
+  width: 100%;
+  max-width: 600px;
+
+  padding: 45px 35px;
+
+  text-align: center;
+
+  background: #343a40;
+
+  border: 1px solid #495057;
+  border-radius: 22px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+
+  animation: resultCard 0.6s ease;
+}
+
+/* Heading */
+.result-card h2 {
+  margin: 0 0 30px;
+
+  color: #ffffff;
+
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* Percentage Circle */
+.score-circle {
+  width: 190px;
+  height: 190px;
+
+  margin: 0 auto 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 8px solid #00c46a;
+  border-radius: 50%;
+
+  background: #212529;
+
+  box-shadow:
+    0 0 25px rgba(0, 196, 106, 0.3),
+    inset 0 0 25px rgba(0, 0, 0, 0.4);
+
+  transition: transform 0.3s ease;
+}
+
+.score-circle:hover {
+  transform: scale(1.05);
+}
+
+/* Percentage text */
+.score-circle span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  color: #ffffff;
+
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* Emoji / Result */
+.score-circle strong {
+  display: block;
+
+  color: #00c46a;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Score Text */
+.contenet {
+  margin: 0;
+
+  color: #eeeeee;
+
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+.contenet strong {
+  color: #00c46a;
+
+  font-size: 28px;
+}
+
+/* Bottom Message */
+.result-message {
+  margin-top: 20px;
+
+  color: #adb5bd;
+
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Animation */
+@keyframes resultCard {
+  from {
+    opacity: 0;
+    transform: translateY(35px) scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .Finished {
+    padding: 20px;
+  }
+
+  .result-card {
+    padding: 35px 20px;
+  }
+
+  .result-card h2 {
+    font-size: 25px;
+  }
+
+  .score-circle {
+    width: 150px;
+    height: 150px;
+  }
+
+  .score-circle span {
+    font-size: 20px;
+  }
+
+  .score-circle strong {
+    font-size: 17px;
+  }
+
+  .contenet {
+    font-size: 18px;
+  }
+
+  .contenet strong {
+    font-size: 23px;
+  }
+
+  .result-message {
+    font-size: 14px;
+  }
+}

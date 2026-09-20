@@ -1,0 +1,74 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What does HTML stand for?",
+      "options": [
+        "Hyper Text Markup Language",
+        "High Text Machine Language",
+        "Hyperlinks and Text Markup Language",
+        "Home Tool Markup Language"
+      ],
+      "answer": "Hyper Text Markup Language"
+    },
+    {
+      "id": 2,
+      "question": "Which language is primarily used to add interactivity to web pages?",
+      "options": ["HTML", "CSS", "JavaScript", "SQL"],
+      "answer": "JavaScript"
+    },
+    {
+      "id": 3,
+      "question": "Which React hook is used to manage state in a functional component?",
+      "options": ["useEffect", "useState", "useRef", "useContext"],
+      "answer": "useState"
+    },
+    {
+      "id": 4,
+      "question": "Which technology is commonly used to build REST APIs with Node.js?",
+      "options": ["Express.js", "Bootstrap", "React", "MongoDB"],
+      "answer": "Express.js"
+    },
+    {
+      "id": 5,
+      "question": "Which database is a NoSQL database?",
+      "options": ["MySQL", "PostgreSQL", "MongoDB", "Oracle"],
+      "answer": "MongoDB"
+    },
+    {
+      "id": 6,
+      "question": "Which HTTP method is commonly used to retrieve data from a server?",
+      "options": ["POST", "GET", "PUT", "DELETE"],
+      "answer": "GET"
+    },
+    {
+      "id": 7,
+      "question": "Which SQL command is used to retrieve data from a database?",
+      "options": ["INSERT", "UPDATE", "SELECT", "DELETE"],
+      "answer": "SELECT"
+    },
+    {
+      "id": 8,
+      "question": "What is Git primarily used for?",
+      "options": [
+        "Database management",
+        "Version control",
+        "UI design",
+        "Hosting websites"
+      ],
+      "answer": "Version control"
+    },
+    {
+      "id": 9,
+      "question": "Which status code indicates that an HTTP request was successful?",
+      "options": ["200", "404", "500", "9000"],
+      "answer": "200"
+    },
+    {
+      "id": 10,
+      "question": "Which technology is used to containerize applications?",
+      "options": ["Docker", "Git", "React", "MySQL"],
+      "answer": "Docker"
+    }
+  ]
+}
