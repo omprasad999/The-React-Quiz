@@ -1,7 +1,12 @@
+import { useContext } from "react";
 import Reset from "../Reset/Reset";
 import "./Finished.css";
+import { QuizzContext } from "../../Context/QuizzContext";
 
-export default function Finished({ points, maxPoints, highScore ,dispatch}) {
+export default function Finished() {
+  const { points, highScore, dispatch, questions } = useContext(QuizzContext);
+  const NumQuestions = questions.length;
+  const maxPoints = NumQuestions * 10;
   const percentage = (points / maxPoints) * 100;
   let emoji;
   if (percentage === 100) emoji = "🎖️ Excelent";
@@ -34,7 +39,7 @@ export default function Finished({ points, maxPoints, highScore ,dispatch}) {
         <p className="result-message">
           Great job! 🚀 Keep learning and improving!
         </p>
-        <Reset dispatch={dispatch}/>
+        <Reset dispatch={dispatch} />
       </div>
     </div>
   );

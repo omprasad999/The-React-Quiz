@@ -1,5 +1,10 @@
+import { useContext } from "react";
 import "./Initial.css";
-export default function Initial({ NumQuestions, dispatch }) {
+import { QuizzContext } from "../../Context/QuizzContext";
+export default function Initial() {
+  const { dispatch, questions } = useContext(QuizzContext);
+
+  const NumQuestions = questions.length;
   return (
     <div className="initial">
       <h1>Welcome to the Quiz App</h1>

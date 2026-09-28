@@ -1,6 +1,9 @@
 import "./Questions.css";
 import Options from "../Options/Options.jsx";
-export default function Questions({ questions, index ,answer,dispatch}) {
+import { useContext } from "react";
+import { QuizzContext } from "../../Context/QuizzContext.jsx";
+export default function Questions() {
+  const { questions, index, answer, dispatch } = useContext(QuizzContext);
   return (
     <div className="questions">
       <h3>
